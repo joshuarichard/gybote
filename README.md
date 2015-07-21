@@ -29,7 +29,7 @@ $ python gybote.py
 ```
 ├── dict
 |   └── gybe-lyrics.txt
-├── logs (will be created at runtime)
+├── logs (created at runtime)
 |   └── gybote.log
 ├── gybote.py
 ├── README.md
