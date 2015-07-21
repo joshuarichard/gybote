@@ -26,6 +26,7 @@ $ python gybote.py
 
 ### Folder Structure
 
+```
 ├── dict
 |   └── gybe-lyrics.txt
 ├── logs (will be created at runtime)
@@ -33,3 +34,4 @@ $ python gybote.py
 ├── gybote.py
 ├── README.md
 └── LICENSE
+```
