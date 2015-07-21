@@ -11,12 +11,12 @@ To install:
 $ pip install tweepy
 ```
     
-### Configuration
+## Configuration
 The only changes required for gybote to run are the four credentials required by Twitter. 
 
 These are defined at the top of gybote.py as API_KEY, API_SECRET, ACCESS_TOKEN, and ACCESS_SECRET. They can be found by going to the settings page for you app and clicking on "Keys and Access Tokens".
 
-#### Compilation
+## Compilation
 cd into the project's root directory and run:
 ```shell
 $ python gybote.py
