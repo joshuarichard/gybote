@@ -23,3 +23,13 @@ cd into the project's root directory and run:
 ```shell
 $ python gybote.py
 ```
+
+### Folder Structure
+
+├── dict
+|   └── gybe-lyrics.txt
+├── logs (will be created at runtime)
+|   └── gybote.log
+├── gybote.py
+├── README.md
+└── LICENSE
