@@ -24,7 +24,7 @@ cd into the project's root directory and run:
 $ python gybote.py
 ```
 
-### Folder Structure
+### File Structure
 
 ```
 ├── dict
