@@ -33,7 +33,6 @@ def send_tweet(line):
     # send tweet
     api.update_status(status=line)
 
-# choose line for tweet
 def choose_line():
     """ Chooses a line from a dictionary of Godspeed You! Black Emperor songs. """
 
