@@ -7,7 +7,9 @@ The only external dependency that gybote requires is one of the many python-twit
 You can find it here: https://github.com/tweepy/tweepy
 
 To install:
-```$ pip install tweepy```
+```shell
+$ pip install tweepy
+```
     
 ### Configuration
 The only changes required for gybote to run are the four credentials required by Twitter. 
@@ -16,4 +18,6 @@ These are defined at the top of gybote.py as API_KEY, API_SECRET, ACCESS_TOKEN, 
 
 #### Compilation
 cd into the project's root directory and run:
-```$ python gybote.py```
+```shell
+$ python gybote.py
+```
