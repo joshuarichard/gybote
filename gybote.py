@@ -78,7 +78,7 @@ def choose_line():
 
 def main():
     """ Main function. """
-    logging.basicConfig(filename='./logs/gybote.log', level=logging.DEBUG)
+    logging.basicConfig(filename='./logs/gybote.log', level=logging.INFO)
     log.info('Starting jtb...')
 
     api_con = connect()
