@@ -38,8 +38,6 @@ def send_tweet(line, api_con):
 def choose_line():
     """ Chooses a line from a dictionary of Godspeed You! Black Emperor songs. """
 
-    line = ""
-
     # load dictionary
     file_name = open('./dict/gybe-lyrics.txt', 'r')
     file_list = file_name.readlines()
@@ -79,6 +77,8 @@ def main():
 
     # work on clean shutdown to get rid of this while True
     while True:
+        line = ""
+
         log.info('Choosing word to tweet...')
         line = choose_line()
 
