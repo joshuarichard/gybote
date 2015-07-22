@@ -11,13 +11,13 @@ To install:
 $ pip install tweepy
 ```
 
-In addition to tweepy there is also the possibility that you require one more additional dependency. If you are running into the problem where urllib3 cannot establish a secure connection and you are receiving this error:
+In addition to tweepy there is also the possibility that you require one more additional dependency. If you are running into the problem where urllib3 cannot establish a secure connection and you are receiving the below error then you need to install requests.
 ```shell
 /usr/local/lib/python2.7/dist-packages/requests/packages/urllib3/util/ssl_.py:90: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
   InsecurePlatformWarning
 ```
 
-If you are receiving this error then you need to install requests. Requests is a python http library that essentially auto-injects itself into your http requests, doing all of the heavy lifting for you.
+Requests is a python http library that essentially auto-injects itself into your http requests, doing all of the heavy lifting for you.
 
 You can read more about requests here: http://docs.python-requests.org/en/latest/
 
