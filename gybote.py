@@ -1,4 +1,5 @@
-""" Workhorse of the entire f'n thing. """
+""" gybote.py - Workhorse of the entire f'n thing. """
+
 # begin imports, so your tears will dry upwards
 import time
 import tweepy
@@ -7,10 +8,10 @@ import random
 import datetime
 
 # constants - should look into making a settings.py
-API_KEY = '3ay665fsUUBiOJK6xca8b3ile'
-API_SECRET = '8uLWktHANOxU5gcyimL9JE6Ql765DZFBNX6vlBOmG6S643QBBz'
-ACCESS_TOKEN = '3385189491-pVnK0Y16EgQUDIYiX4pka0MfFfqgokYl2l4QZvN'
-ACCESS_SECRET = 'aY0vilDkj07vKjXZTpp6G1NRi8DLvllVd2HmowcE0zncQ'
+API_KEY = ''
+API_SECRET = ''
+ACCESS_TOKEN = ''
+ACCESS_SECRET = ''
 
 log = logging.getLogger()
 
@@ -33,7 +34,10 @@ def send_tweet(line, api_con):
     """ Very simply sends a tweet given the line as an argument. """
 
     if line != "":
-        api_con.update_status(status=line)
+        try:
+            api_con.update_status(status=line)
+        except tweepy.TweepError:
+            log.info('Raised a TweepError, skipping this iteration.')
 
 def choose_line():
     """ Chooses a line from a dictionary of Godspeed You! Black Emperor songs. """
