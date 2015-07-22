@@ -62,7 +62,7 @@ for line in file_list:
 |   └── gybe-lyrics.txt
 ├── gybote
 |   └── gybote.py
-├── logs (created at runtime)
+├── logs
 |   └── gybote.log
 ├── README.md
 └── LICENSE
