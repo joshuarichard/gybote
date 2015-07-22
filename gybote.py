@@ -1,5 +1,5 @@
 """ Workhorse of the entire f'n thing. """
-# begin imports, so your tears will dry upwards
+# begin imports, so our tears will dry upwards
 import time
 import tweepy
 import logging
@@ -43,6 +43,7 @@ def send_tweet(line, api_con):
         except tweepy.TweepError:
             log.info('Caught tweepy error, trying again.')
             send_tweet(line, api_con)
+
 def choose_line():
     """ Chooses a line from a dictionary of Godspeed You! Black Emperor songs. """
 
