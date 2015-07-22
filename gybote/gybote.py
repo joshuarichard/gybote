@@ -47,7 +47,7 @@ def choose_line():
     """ Chooses a line from a dictionary of Godspeed You! Black Emperor songs. """
 
     # load dictionary
-    file_name = open('./dict/gybe-lyrics.txt', 'r')
+    file_name = open('../dict/gybe-lyrics.txt', 'r')
     file_list = file_name.readlines()
     file_name.close()
 
