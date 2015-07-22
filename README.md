@@ -60,9 +60,10 @@ for line in file_list:
 ```
 ├── dict
 |   └── gybe-lyrics.txt
+├── gybote
+|   └── gybote.py
 ├── logs (created at runtime)
 |   └── gybote.log
-├── gybote.py
 ├── README.md
 └── LICENSE
 ```
