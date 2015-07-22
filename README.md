@@ -14,10 +14,10 @@ $ pip install tweepy
 ### Configuration
 The only changes required for gybote to run are the four credentials required by Twitter. 
 
-These are defined at the top of gybote.py as API_KEY, API_SECRET, ACCESS_TOKEN, and ACCESS_SECRET. They can be found by going to the settings page for you app and clicking on "Keys and Access Tokens".
+These are defined at the top of gybote.py as API_KEY, API_SECRET, ACCESS_TOKEN, and ACCESS_SECRET. They can be found by going to the settings page for your app and clicking on "Keys and Access Tokens".
 
 ### Running
-gybote uses a dictionary of all the Godspeed songs I could find or transcribe myself. It should not be considered a complete dictionary. Given this, we suggest not to use gybote in production environments quite yet. The dictionary can be found at '/dict/gybe-lyrics.txt'.
+gybote uses a dictionary of all the Godspeed lyrics I could find or transcribe myself. It should not be considered a complete dictionary. Given this, I suggest not to use gybote in production environments quite yet. The dictionary can be found in the /dict directory.
 
 cd into the project's root directory and run:
 ```shell
