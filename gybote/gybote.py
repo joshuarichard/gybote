@@ -13,6 +13,8 @@ API_SECRET = config[api_secret]
 ACCESS_TOKEN = config[access_token]
 ACCESS_SECRET = config[access_secret]
 
+COMMENT_CHAR = config[comment_char]
+
 log = logging.getLogger()
 
 def connect():
@@ -67,8 +69,8 @@ def choose_line():
     pointer = 0
     for line in file_list:
         if pointer == r_int:
-            if line[0] != '#':
-                log.info('pointer = %s, rInt = %s, num_of_lines = %s ', pointer, r_int, num_of_lines) # debug only
+            if line[0] != COMMENT_CHAR:
+                log.info('pointer = %s, rInt = %s, num_of_lines = %s ', pointer, r_int, num_of_lines)
                 return line
         # just to be safe or something?
         elif pointer > num_of_lines:
