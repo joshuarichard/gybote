@@ -29,7 +29,7 @@ $ pip install requests[security]
 ### Configuration
 The only changes required for gybote to run are the four credentials required by Twitter. 
 
-These are defined at the top of gybote.py as API_KEY, API_SECRET, ACCESS_TOKEN, and ACCESS_SECRET. They can be found by going to the settings page for your app and clicking on "Keys and Access Tokens".
+These are defined in settings.py as API_KEY, API_SECRET, ACCESS_TOKEN, and ACCESS_SECRET. They can be found by going to the settings page for your app and clicking on "Keys and Access Tokens".
 
 ### Running
 
