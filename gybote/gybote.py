@@ -5,15 +5,16 @@ import tweepy
 import logging
 import random
 import datetime
-import gybote.config
+from config import config
 
 # constants
-API_KEY = config[api_key]
-API_SECRET = config[api_secret]
-ACCESS_TOKEN = config[access_token]
-ACCESS_SECRET = config[access_secret]
+API_KEY = config["api_key"]
+API_SECRET = config["api_secret"]
+ACCESS_TOKEN = config["access_token"]
+ACCESS_SECRET = config["access_secret"]
 
-COMMENT_CHAR = config[comment_char]
+COMMENT_CHAR = config["comment_char"]
+DICTIONARY_PATH = config["dictionary_path"]
 
 log = logging.getLogger()
 
@@ -50,7 +51,7 @@ def choose_line():
     """ Chooses a line from a dictionary of Godspeed You! Black Emperor songs. """
 
     # load dictionary
-    file_name = open('../dict/gybe-lyrics.txt', 'r')
+    file_name = open(DICTIONARY_PATH, 'r')
     file_list = file_name.readlines()
     file_name.close()
 
