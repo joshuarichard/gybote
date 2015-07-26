@@ -27,20 +27,26 @@ $ pip install requests[security]
 ```
 
 ### Configuration
-The only changes required for gybote to run are the four credentials required by Twitter. 
+The only changes required for gybote to run are the constants found in config.py. These include credentials provided by twitter, the location of the dictionary to be tweeted, and the character to denote comments.
 
-These are defined at the top of gybote.py as API_KEY, API_SECRET, ACCESS_TOKEN, and ACCESS_SECRET. They can be found by going to the settings page for your app and clicking on "Keys and Access Tokens".
+These are defined in /gybote/config.py as API_KEY, API_SECRET, ACCESS_TOKEN, and ACCESS_SECRET. They can be found by going to the settings page for your app and clicking on "Keys and Access Tokens".
 
 ### Running
 
-cd into the project's root directory and run:
+In the very near future you will be able to install gybote by running:
+```shell
+$ pip install gybote
+```
+
+But as of right now I have not yet completed the registration with PyPI. In the mean time just cd into the project's root directory and run:
 ```shell
 $ python gybote.py
 ```
+
 ### Dictionary
 gybote uses a dictionary of all the Godspeed lyrics I could find or transcribe myself. It should not be considered a complete dictionary. Given this, I suggest not to use gybote in production environments quite yet. The dictionary can be found in the /dict directory as gybe-lyrics.txt.
 
-The character '#' is used to denote a comment. The code that accounts for this can be found in gybote.py, however in gybote.py it might look slightly different.
+The default character '#' is used to denote a comment. The code that accounts for this can be found in gybote.py, however in gybote.py it might look slightly different. COMMENT_CHARACTER is set in config.py.
 
 Feel free to add your own dictionaries for use with gybote.py.
 
@@ -49,7 +55,7 @@ Feel free to add your own dictionaries for use with gybote.py.
 pointer = 0
 for line in file_list:
     if pointer == r_int:
-        if line[0] != '#':
+        if line[0] != COMMENT_CHARACTER:
             return line
     else:
         pointer += 1
@@ -61,9 +67,14 @@ for line in file_list:
 ├── dict
 |   └── gybe-lyrics.txt
 ├── gybote
+|   └── __init__.py
+|   └── config.py
 |   └── gybote.py
 ├── logs
 |   └── gybote.log
 ├── README.md
-└── LICENSE
+├── LICENSE
+├── DESCRIPTION.rst
+├── setup.cfg
+└── setup.py
 ```

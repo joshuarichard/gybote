@@ -1,16 +1,20 @@
-""" Workhorse of the entire f'n thing. """
+""" gybote, a twitter bot."""
 # begin imports, so our tears will dry upwards
 import time
 import tweepy
 import logging
 import random
 import datetime
+from config import config
 
-# constants - should look into making a settings.py
-API_KEY = ''
-API_SECRET = ''
-ACCESS_TOKEN = ''
-ACCESS_SECRET = ''
+# constants
+API_KEY = config["api_key"]
+API_SECRET = config["api_secret"]
+ACCESS_TOKEN = config["access_token"]
+ACCESS_SECRET = config["access_secret"]
+
+COMMENT_CHAR = config["comment_char"]
+DICTIONARY_PATH = config["dictionary_path"]
 
 log = logging.getLogger()
 
@@ -47,7 +51,7 @@ def choose_line():
     """ Chooses a line from a dictionary of Godspeed You! Black Emperor songs. """
 
     # load dictionary
-    file_name = open('../dict/gybe-lyrics.txt', 'r')
+    file_name = open(DICTIONARY_PATH, 'r')
     file_list = file_name.readlines()
     file_name.close()
 
@@ -66,8 +70,8 @@ def choose_line():
     pointer = 0
     for line in file_list:
         if pointer == r_int:
-            if line[0] != '#':
-                log.info('pointer = %s, rInt = %s, num_of_lines = %s ', pointer, r_int, num_of_lines) # debug only
+            if line[0] != COMMENT_CHAR:
+                log.info('pointer = %s, rInt = %s, num_of_lines = %s ', pointer, r_int, num_of_lines)
                 return line
         # just to be safe or something?
         elif pointer > num_of_lines:
