@@ -5,8 +5,9 @@ import tweepy
 import logging
 import random
 import datetime
+# from gybote-master import settings
 
-# constants - should look into making a settings.py
+# constants
 API_KEY = ''
 API_SECRET = ''
 ACCESS_TOKEN = ''
