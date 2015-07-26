@@ -1,17 +1,17 @@
-""" Workhorse of the entire f'n thing. """
+""" gybote, a twitter bot."""
 # begin imports, so our tears will dry upwards
 import time
 import tweepy
 import logging
 import random
 import datetime
-# from gybote-master import settings
+from config import config
 
 # constants
-API_KEY = ''
-API_SECRET = ''
-ACCESS_TOKEN = ''
-ACCESS_SECRET = ''
+API_KEY = config[api_key]
+API_SECRET = config[api_secret]
+ACCESS_TOKEN = config[access_token]
+ACCESS_SECRET = config[access_secret]
 
 log = logging.getLogger()
 
