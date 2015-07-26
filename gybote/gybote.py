@@ -5,7 +5,7 @@ import tweepy
 import logging
 import random
 import datetime
-from config import config
+import gybote.config
 
 # constants
 API_KEY = config[api_key]

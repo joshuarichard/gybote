@@ -23,7 +23,6 @@ setup(
         'Intended Audience :: Humans',
         'Topic :: Twitter :: Bot',
         'License :: OSI Approved :: Apache 2.0',
-
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
