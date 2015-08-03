@@ -1,4 +1,4 @@
-"""gybote, the twitter bot."""
+"""gybote, a twitter bot."""
 
 from setuptools import setup
 from codecs import open

@@ -1,4 +1,5 @@
 """ gybote, a twitter bot."""
+
 # begin imports, so our tears will dry upwards
 import time
 import tweepy
@@ -7,7 +8,6 @@ import random
 import datetime
 from config import config
 
-# constants
 API_KEY = config["api_key"]
 API_SECRET = config["api_secret"]
 ACCESS_TOKEN = config["access_token"]
@@ -15,16 +15,12 @@ ACCESS_SECRET = config["access_secret"]
 
 COMMENT_CHAR = config["comment_char"]
 DICTIONARY_PATH = config["dictionary_path"]
+SLEEP_FOR = int(config["sleep_for"])
 
 log = logging.getLogger()
 
 def connect():
     """Initiate connection with twitter."""
-
-    # log.info('CONSUMER_KEY %s', API_KEY)        ----
-    # log.info('CONSUMER_SECRET %s', API_SECRET)     |--- un-comment if you'd like,
-    # log.info('ACCESS_KEY %s', ACCESS_TOKEN)        |    just for debugging
-    # log.info('ACCESS_SECRET %s', ACCESS_SECRET) ----
 
     # connect to twitter
     auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
@@ -50,12 +46,10 @@ def send_tweet(line, api_con):
 def choose_line():
     """ Chooses a line from a dictionary of Godspeed You! Black Emperor songs. """
 
-    # load dictionary
     file_name = open(DICTIONARY_PATH, 'r')
     file_list = file_name.readlines()
     file_name.close()
 
-    # find out how many lines the are in the dictionary
     num_of_lines = 0
     for line in file_list:
         num_of_lines += 1
@@ -63,10 +57,8 @@ def choose_line():
     # subtract 1 because I don't like to fuck w/ indices
     num_of_lines = num_of_lines - 1
 
-    # pick a random line
     r_int = random.randint(0, num_of_lines)
 
-    # get the line
     pointer = 0
     for line in file_list:
         if pointer == r_int:
@@ -80,29 +72,37 @@ def choose_line():
         else:
             pointer += 1
 
+def iteration():
+    """Manages the process of sending one tweet."""
+
+    log.info('Connecting to twitter.')
+    api_con = connect()
+    line = ""
+
+    log.info('Choosing word to tweet.')
+    line = choose_line()
+
+    log.info('Sending tweet.')
+    send_tweet(line, api_con)
+    log.info('Tweet sent with the line: %s', line)
+
+    date_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    log.info('----------------------------------------------------------------')
+    log.info('------------------------%s------------------------', date_time)
+    log.info('----------------------------------------------------------------')
+
+    # sleep for 5 minutes
+    time.sleep(SLEEP_FOR)
+
 def main():
     """ Main function. """
-    logging.basicConfig(filename='../logs/gybote.log', level=logging.INFO)
-    log.info('Starting jtb...')
 
-    api_con = connect()
+    logging.basicConfig(filename='./logs/gybote.log', level=logging.INFO)
+    log.info('Starting.')
 
-    # work on clean shutdown to get rid of this while True
     while True:
-        line = ""
-
-        log.info('Choosing word to tweet...')
-        line = choose_line()
-
-        log.info('Sending tweet...')
-        send_tweet(line, api_con)
-        log.info('Tweet sent with the line: %s', line)
-
-        date_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-        log.info('------------------------------%s------------------------------------', date_time)
-
-        # sleep for 5 minutes
-        time.sleep(300)
+        iteration()
+       
 
 if __name__ == "__main__":
     main()
