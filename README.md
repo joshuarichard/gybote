@@ -1,5 +1,7 @@
 # gybote
-A twitter bot that tweets Godspeed You! Black Emperor lyrics.
+A twitter bot that tweets Godspeed You! Black Emperor lyrics. 
+
+gybote can be found in the wild here: https://twitter.com/gybote
 
 ### Dependencies
 The only external dependency that gybote requires is Tweepy, one of the many python-twitter APIs. Tweepy was chosen because well, it's easy.
