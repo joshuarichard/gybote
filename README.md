@@ -29,16 +29,11 @@ $ pip install requests[security]
 ### Configuration
 The only changes required for gybote to run are the constants found in config.py. These include credentials provided by twitter, the location of the dictionary to be tweeted, and the character to denote comments.
 
-These are defined in /gybote/config.py as API_KEY, API_SECRET, ACCESS_TOKEN, and ACCESS_SECRET. They can be found by going to the settings page for your app and clicking on "Keys and Access Tokens".
+These are defined in /gybote/config.py as API_KEY, API_SECRET, ACCESS_TOKEN, and ACCESS_SECRET. They can be found by going to the settings page for your app and clicking on "Keys and Access Tokens". Here you can also change the amount of time gybote sleeps in between tweets.
 
 ### Running
 
-In the very near future you will be able to install gybote by running:
-```shell
-$ pip install gybote
-```
-
-But as of right now I have not yet completed the registration with PyPI. In the mean time just cd into the project's root directory and run:
+cd into the project's root directory and run:
 ```shell
 $ python gybote.py
 ```

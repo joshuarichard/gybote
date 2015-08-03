@@ -42,6 +42,7 @@ def send_tweet(line, api_con):
             api_con.update_status(status=line)
         except tweepy.TweepError:
             log.info('Caught tweepy error, trying again.')
+            iteration()
 
 def choose_line():
     """ Chooses a line from a dictionary of Godspeed You! Black Emperor songs. """

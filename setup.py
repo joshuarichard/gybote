@@ -11,13 +11,13 @@ with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
 
 setup(
     name='gybote',
-    version='1.0.0',
+    packages=['gybote'],
+    version='0.0.3',
     description='a twitter bot that tweets godspeed you! black emperor lyrics.',
     long_description=long_description,
     url='https://github.com/joshuarichard/gybote',
-    author='joshua richard',
+    author='Joshua Richard',
     author_email='eos.josh.richard@gmail.com',
-    license='Apache Software License',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
@@ -31,6 +31,6 @@ setup(
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
     ],
-    keywords='godspeed you black emperor twitter bot',
+    keywords=['godspeed you black emperor', 'twitter', 'bot', 'fun'],
     install_requires=['tweepy'],
 )
