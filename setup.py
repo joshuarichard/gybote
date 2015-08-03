@@ -11,7 +11,7 @@ with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
 
 setup(
     name='gybote',
-    version='1.2.0',
+    version='1.0.0',
     description='a twitter bot that tweets godspeed you! black emperor lyrics.',
     long_description=long_description,
     url='https://github.com/joshuarichard/gybote',
