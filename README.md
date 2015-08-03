@@ -72,6 +72,7 @@ for line in file_list:
 ├── README.md
 ├── LICENSE
 ├── DESCRIPTION.rst
+├── MANIFEST.in
 ├── setup.cfg
 └── setup.py
 ```
