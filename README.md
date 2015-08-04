@@ -37,7 +37,7 @@ These are defined in /gybote/config.py as API_KEY, API_SECRET, ACCESS_TOKEN, and
 
 cd into the project's root directory and run:
 ```shell
-$ python gybote.py
+$ python gybote/gybote.py
 ```
 
 ### Dictionary
