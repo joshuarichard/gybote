@@ -66,6 +66,8 @@ def choose_line():
             if line[0] != COMMENT_CHAR:
                 log.info('pointer = %s, rInt = %s, num_of_lines = %s ', pointer, r_int, num_of_lines)
                 return line
+            else:
+                iteration()
         # just to be safe or something?
         elif pointer > num_of_lines:
             line = ""
@@ -103,7 +105,6 @@ def main():
 
     while True:
         iteration()
-       
 
 if __name__ == "__main__":
     main()
