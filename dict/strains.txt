@@ -1,0 +1,198 @@
+# strains.txt
+#
+# order:
+# 1. hybrid
+# 2. sativa
+# 3. indica
+$100 OG (hybrid) - Earthy, and pungent with a skunk flavor, it leaves the toker feeling very euphoric, and relaxed. https://www.leafly.com/hybrid/100-og
+13 Dawgs (hybrid) - With a flavor resembling tobacco, 13 Dawgs induces a body buzz with a creative mind. https://www.leafly.com/hybrid/13-dawgs
+3 Kings (hybrid) - Earthy, pungent, and diesely. Comprised of Headband, Sour Diesel, and OG Kush. Sativa dominant. https://www.leafly.com/hybrid/3-kings
+303 OG (hybrid) - Colorado strain bred by crossing Pre-98 Bubba Kush and Chemdawg. Indica dominant. https://www.leafly.com/hybrid/303-og
+501st OG (hybrid) - Indica dominant cross between Skywalker OG and Rare Dankness #1. Bred by Rare Dankness. https://www.leafly.com/hybrid/501st-og
+707 Headband (hybrid) - Hailing from the bay area, mixed breed of Sour Diesel, OG Kush, and Master Kush. https://www.leafly.com/hybrid/707-headband
+A-dub (hybrid)
+A-Train (hybrid)
+ACDC
+AK-47
+AK-48
+Aberdeen
+Afghan Diesel
+Afghan Haze
+Afghanica
+Afwreck
+Agent Orange
+Albert Walker
+Alien OG
+Alien Reunion
+Alien Rock Candy
+Alien Sour Apple
+Alchaberry
+Alpha OG
+Apline Blue
+Ambrosia
+Amethyst Bud
+Animal Cookies
+Apollo 11
+Apollo 13
+Appalachia
+Armageddon
+Armagnac
+Ash
+Atmosphere
+Atomic Goat
+Atomic Northern Lights
+Avalon
+Avi
+Avi-Dekel
+B4
+BC Big Bud
+BC Roadkill
+BOG Bubble
+BSC
+Balmoral
+Banana Diesel
+Banana Kush
+Banana OG
+Bandana
+Beastmode OG
+Belladonna
+Berry Bomb
+Berry OG
+Bhang 707 Headband
+Bhank AK-47
+Bhang Alien OG
+Bhang Banana Diesel
+Bhang Banana Kush
+Bhang Blue Diesel
+Bhang Bubble Gum
+Bhang Cali Orange
+Bhang Charlie Sheen
+Bhang Cheese
+Bhang ChemDawg
+Bhang Cherry Pie
+Bhang Dutch Treat
+Bhang Earth OG
+Bhang Fire OG
+Bhang Ghost OG
+Bhang Girl Scout Cookies
+Bhang Headband
+Bhang Holy Graile
+Bhang J-1
+Bhang Jack Frost
+Bhang Juicy Fruit
+Bhang Lemon Diesel
+Bhang Lemon Skunk
+Bhang OG Kush
+Bhang Perfecto Hybrid
+Bhang Pineapple Express
+Bhang Pineapple Kush
+Bhang Purple AK-47
+Bhang Purple Diesel
+Bhang SAGE
+Bhang Skunk #1
+Bhang Skywalker OG
+Bhang Sour OG
+Bhang Tahoe OG
+Bhang Trainwreck
+Bhang White Diesel
+Bhang White Widow
+Bhang WidowMaker
+Bhang XJ-13
+Biddy Early
+Big Buddha Cheese
+Big Sky OG
+Bio-Diesel
+Bio-Jesus
+Birthday Cake Kush
+Black Betty
+Black Cherry Soda
+Black Dahlia
+Black Haze
+Black Tuna
+Black Velvet
+Black Widow
+Blackberry
+Blissful Wizard
+Blockhead
+Blowfish
+Blue Boy
+Blue Champagne
+Blue Cookies
+Blue Crack
+Blue Diesel
+Blue Dragon
+Blue Dream
+Blue Frost
+Blue Goo
+Blue Hash
+Blue Hawaiian
+Blue Haze
+Blue Heron
+Blue Ivy
+Blue Kush
+Blue Magoo
+Blue Moon Rocks
+Blue Mystic
+Blue Nightmare
+Blue OG
+Blue Persuasion
+Blue Rhino
+Blue Train
+Blue Velvet
+Blue Venom
+Blue Wido
+Blue Wreck
+Blueberry Cheesecake
+Blueberry Diesel
+Blueberry Essence
+Blueberry Haze
+Blueberry Headband
+Blueberry Lambsbread
+Blueberry Silvertip
+Bluberry Yum Yum
+Blues
+Bogart
+Boggle Gum
+Booger
+Bordello
+Boy Scout Cookies
+Boysenberry
+Brains Damage
+Broke Diesel
+Brooklyn Mango
+Bruce Banner
+Bruce Banner #3
+Bubba Tom Hayes
+Bubble Gum
+Bubbleberry
+Bubblegun
+Bugatti OG
+Burmese Kush
+C4
+Cabbage Patch
+Cali Gold
+Cali Kush
+California Orange
+California Sour
+Canna-Tsu
+Cannadntial
+Cannalope Kush
+Cannatonic
+Caramel Candy Kush
+Carmelicious
+Carl Sagan
+Cataract Kush
+Champagne Kush
+Charlie Sheen
+Cheese
+Cheese Candy
+Cheesewreck
+Chem Crush
+Chem Valley Kush
+ChemWreck
+Chemdawg
+Chemdawg 4
+Chemdawg 91
+Chemdawg Sour Diesel
+Chemobly
+
