@@ -63,6 +63,7 @@ for line in file_list:
 ```
 ├── dict
 |   └── gybe-lyrics.txt
+|   └── strains.txt
 ├── gybote
 |   └── __init__.py
 |   └── config.py
