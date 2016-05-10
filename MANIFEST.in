@@ -1,5 +1,0 @@
-include DESCRIPTION.rst
-include README.md
-include LICENSE
-include dict/*
-include logs/gybote.log
