@@ -1,5 +1,5 @@
 # gybote
-A twitter bot that tweets Godspeed You! Black Emperor lyrics. 
+A twitter bot that tweets Godspeed You! Black Emperor lyrics.
 
 gybote can be found in the wild here: https://twitter.com/gybote
 
@@ -41,7 +41,7 @@ $ python gybote/gybote.py
 ```
 
 ### Dictionary
-gybote uses a dictionary of all the Godspeed lyrics I could find or transcribe myself. It should not be considered a complete dictionary. Given this, I suggest not to use gybote in production environments quite yet. The dictionary can be found in the /dict directory as gybe-lyrics.txt.
+gybote uses a dictionary of all the Godspeed lyrics I could find or transcribe myself. It should not be considered a complete dictionary. The dictionary can be found in the /dict directory as gybe-lyrics.txt.
 
 The default character '#' is used to denote a comment. The code that accounts for this can be found in gybote.py, however in gybote.py it might look slightly different. COMMENT_CHARACTER is set in config.py.
 
